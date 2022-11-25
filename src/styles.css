@@ -1,0 +1,100 @@
+:root {
+    --text1: #ffffff;
+    --text2: #e4e4e4;
+    --background1: #101010;
+    --background2: #282828;
+    --rosa: #DE5E91;
+}
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--background1);
+    color: var(--text2);
+    transition: all 400ms;
+}
+
+body {
+    padding: 20px 60px;
+}
+
+header {
+    display: grid;
+}
+
+input {
+    background-color: var(--background2);
+    border-radius: 5px;
+    border: 1px solid var(--rosa);
+    color: var(--gris3);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+#themeMode {
+    color: var(--text1);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(204, 204, 204, 0.281);
+    background-color: var(--background2);
+    cursor: pointer;
+    margin-bottom: 32px;
+    text-align: right;
+}
+
+#themeMode:hover {
+    background-color: var(--rosa);
+}
+
+h1, h2, h3, h4 {
+    color: var(--text1);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    align-content: center;
+    align-items: center;
+    background-color: var(--background2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 0%;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.card p {
+    background-color: var(--background2);
+    flex: 1;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    padding: 5px 20px 0px 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
